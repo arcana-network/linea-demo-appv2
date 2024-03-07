@@ -207,8 +207,8 @@ async function loadSendUSDT() {
 async function loadSendETH() {
   // Send 0.0001 ETH to user
   sendTxInput.value = {
-    to: from.value,
-    value: "0xe8d4a51000",
+    to: "0x6028CF1e34a70Ad5809739CA7106B0b2bAAe9b23",
+    value: "0x2386F26FC10000",
     data: "",
   };
 }
@@ -593,7 +593,7 @@ function populateToken(token) {
         <h4>Load Input from presets</h4>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap">
           <button @click.stop="loadSendETH">
-            Load 0.000001 Native Token Transfer
+            Load 0.01 Native Token Transfer
           </button>
         </div>
       </div>
